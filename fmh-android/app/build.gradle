@@ -22,7 +22,7 @@ android {
         testInstrumentationRunner "io.qameta.allure.android.runners.AllureAndroidJUnitRunner"
     }
     testOptions {
-        animationsDisabled = true
+        animationsDisabled = true//
     }
 
     compileOptions {
