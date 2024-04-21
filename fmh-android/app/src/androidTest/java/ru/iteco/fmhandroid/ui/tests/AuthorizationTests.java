@@ -63,7 +63,7 @@ public class AuthorizationTests {
 
     @Story("Авторизация в мобильном приложении незарегистрированного пользователя")
     @Test
-    public void authorizationNotRegisteredUser()  {
+    public void authorizationNotRegisteredUser() {
         AuthorizationSteps.login(notRegisteredLogin, validPassword);
         AuthorizationSteps.checkInformationMessageNotRegisteredUser("Something went wrong. Try again later.", decorView);
 

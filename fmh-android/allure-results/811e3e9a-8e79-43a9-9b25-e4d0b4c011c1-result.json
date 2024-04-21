@@ -1,0 +1,61 @@
+{
+    "name": "goToTheAboutPage",
+    "start": 1713628093225,
+    "stop": 1713628110305,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "811e3e9a-8e79-43a9-9b25-e4d0b4c011c1",
+    "historyId": "d19ce67c016956fdb5d75a550d42cd95",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.MainPageTests.goToTheAboutPage",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.MainPageTests"
+        },
+        {
+            "name": "testMethod",
+            "value": "goToTheAboutPage"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.MainPageTests"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(783)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "ТК№7. Переход во вкладку \"About\" через главное меню мобильного приложения"
+        },
+        {
+            "name": "feature",
+            "value": "Тест-кейсы для вкладки Main мобильного приложения Мобильный хоспис."
+        }
+    ]
+}

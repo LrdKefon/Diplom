@@ -1,0 +1,61 @@
+{
+    "name": "logOut",
+    "start": 1713628972868,
+    "stop": 1713628985344,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "a68f6622-1682-4681-870c-2999ebc35e3b",
+    "historyId": "adbc74a84648569d3436ac4b75bd7fc8",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.AuthorizationTests.logOut",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.AuthorizationTests"
+        },
+        {
+            "name": "testMethod",
+            "value": "logOut"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.AuthorizationTests"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(912)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Выход из учётной записи"
+        },
+        {
+            "name": "feature",
+            "value": "ТК по процессу Авторизация, аутентификация."
+        }
+    ]
+}

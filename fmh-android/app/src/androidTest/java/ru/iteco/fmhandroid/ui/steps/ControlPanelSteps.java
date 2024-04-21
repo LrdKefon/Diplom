@@ -11,6 +11,7 @@ import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static ru.iteco.fmhandroid.ui.elements.ControlPanelPage.newsRecyclerList;
 import static ru.iteco.fmhandroid.ui.steps.CustomViewActions.clickChildViewWithId;
+
 import androidx.test.espresso.contrib.RecyclerViewActions;
 
 import android.view.View;
@@ -75,10 +76,8 @@ public class ControlPanelSteps {
         onView(ControlPanelPage.ButtonAgreement()).perform(click());
         onView(ControlPanelPage.ButtonDescription()).check(matches(isDisplayed()));
         onView(ControlPanelPage.ButtonDescription()).perform(replaceText(description), closeSoftKeyboard());
-        ;
         onView(ControlPanelPage.ButtonSave()).check(matches(isDisplayed()));
         onView(ControlPanelPage.ButtonSave()).perform(click());
-        ControlPanelPage.pageControlPanel.check(matches(isDisplayed()));//лучше отфильтровать и найти только что созданную новость. пока проверка что на странице с нвоостями
     }
 
     @Step("Заполнить поля новости, роле Категория пустое")
@@ -94,7 +93,6 @@ public class ControlPanelSteps {
         onView(ControlPanelPage.ButtonAgreement()).perform(click());
         onView(ControlPanelPage.ButtonDescription()).check(matches(isDisplayed()));
         onView(ControlPanelPage.ButtonDescription()).perform(replaceText(description), closeSoftKeyboard());
-        ;
         onView(ControlPanelPage.ButtonSave()).check(matches(isDisplayed()));
         onView(ControlPanelPage.ButtonSave()).perform(click());
     }

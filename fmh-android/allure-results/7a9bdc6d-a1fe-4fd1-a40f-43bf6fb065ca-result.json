@@ -1,0 +1,61 @@
+{
+    "name": "deleteNews",
+    "start": 1713628054372,
+    "stop": 1713628076252,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "7a9bdc6d-a1fe-4fd1-a40f-43bf6fb065ca",
+    "historyId": "e058343a523abda9a51ab16c1969a1b0",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.ControlPanelTests.deleteNews",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.ControlPanelTests"
+        },
+        {
+            "name": "testMethod",
+            "value": "deleteNews"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.ControlPanelTests"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(783)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "ТК№27. Удаление новости во вкладке \"Панель управления\""
+        },
+        {
+            "name": "feature",
+            "value": "Тест-кейсы для Панели Управления Новостей мобильного приложения Мобильный хоспис."
+        }
+    ]
+}

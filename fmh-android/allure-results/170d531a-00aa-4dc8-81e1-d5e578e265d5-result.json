@@ -1,0 +1,61 @@
+{
+    "name": "goToTheQuotationPage",
+    "start": 1713628110314,
+    "stop": 1713628127378,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "170d531a-00aa-4dc8-81e1-d5e578e265d5",
+    "historyId": "d97ce5f5c0d64f9402f981672ee505aa",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.MainPageTests.goToTheQuotationPage",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.MainPageTests"
+        },
+        {
+            "name": "testMethod",
+            "value": "goToTheQuotationPage"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.MainPageTests"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(783)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "ТК№8. Переход во вкладку «Тематические цитаты» через главное меню мобильного приложения"
+        },
+        {
+            "name": "feature",
+            "value": "Тест-кейсы для вкладки Main мобильного приложения Мобильный хоспис."
+        }
+    ]
+}

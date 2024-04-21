@@ -1,0 +1,61 @@
+{
+    "name": "authorizationRegisteredUser",
+    "start": 1713624176132,
+    "stop": 1713624193757,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "400bbda2-142c-4058-a525-16effa63d100",
+    "historyId": "c59484804ca7398df52c616451ef721",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.AuthorizationTests.authorizationRegisteredUser",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.AuthorizationTests"
+        },
+        {
+            "name": "testMethod",
+            "value": "authorizationRegisteredUser"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.AuthorizationTests"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(426)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "ТК№1. Авторизация в мобильном приложении(зарегистрированный пользователь"
+        },
+        {
+            "name": "feature",
+            "value": "ТК по процессу Авторизация, аутентификация."
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "name": "editNews",
+    "start": 1713624262785,
+    "stop": 1713624283739,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "2cf148c5-3dd3-4ba8-ba03-f49df9cf940a",
+    "historyId": "ecb0b0f3391d537e62e6be41e4e6e280",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.ControlPanelTests.editNews",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.ControlPanelTests"
+        },
+        {
+            "name": "testMethod",
+            "value": "editNews"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.ControlPanelTests"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(426)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "ТК№28. Редактирование новости во вкладке \"Панель управления\""
+        },
+        {
+            "name": "feature",
+            "value": "Тест-кейсы для Панели Управления Новостей мобильного приложения Мобильный хоспис."
+        }
+    ]
+}

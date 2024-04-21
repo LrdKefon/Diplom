@@ -21,7 +21,7 @@ import ru.iteco.fmhandroid.ui.steps.NewsSteps;
 
 @RunWith(AllureAndroidJUnit4.class)
 @Feature(value = "Тест-кейсы для Панели Управления Новостей мобильного приложения Мобильный хоспис.")
-public class ControlPanelTests     {
+public class ControlPanelTests {
     @Rule
     public ActivityScenarioRule<AppActivity> mActivityScenarioRule =
             new ActivityScenarioRule<>(AppActivity.class);
@@ -39,17 +39,18 @@ public class ControlPanelTests     {
         mActivityScenarioRule.getScenario()
                 .onActivity(activity -> decorView = activity.getWindow().getDecorView());
     }
+
     String description = "Люблю я макароны";
     String changeDescription = "Не очень то и Люблю я макароны";
     private View decorView;
     String titleNameForCreate = "Новейшая Уникальная Новость";
     String titleNameForDelete = "Удали меня полностью";
-    String titleNameForEdit="Я не такая Меняй Скорее";
-    String titleNameForChangeActive="Компас Активности";
+    String titleNameForEdit = "Я не такая Меняй Скорее";
+    String titleNameForChangeActive = "Компас Активности";
 
     @Story("ТК№32. Создание новости во вкладке \"Панель управления\"")
     @Test
-    public void createNews(){
+    public void createNews() {
         MainSteps.goToTheNews();
         NewsSteps.clickButtonEditNews();
         ControlPanelSteps.clickCreateNewsButton();
@@ -57,9 +58,10 @@ public class ControlPanelTests     {
         ControlPanelSteps.clickDeleteNewsButton(titleNameForCreate);
 
     }
-    @Story("ТК№27. Удаление новости во вкладке \"Панель управления\"")//прошел но необходимо создать шаг с созданием новости для атомарности
+
+    @Story("ТК№27. Удаление новости во вкладке \"Панель управления\"")
     @Test
-    public void deleteNews(){
+    public void deleteNews() {
         MainSteps.goToTheNews();
         NewsSteps.clickButtonEditNews();
         ControlPanelSteps.clickCreateNewsButton();
@@ -68,9 +70,9 @@ public class ControlPanelTests     {
     }
 
 
-    @Story("ТК№28. Редактирование новости во вкладке \"Панель управления\"")//прошел но необходимо добавить матчер на сравнение
+    @Story("ТК№28. Редактирование новости во вкладке \"Панель управления\"")
     @Test
-    public void editNews(){
+    public void editNews() {
         MainSteps.goToTheNews();
         NewsSteps.clickButtonEditNews();
         ControlPanelSteps.clickCreateNewsButton();
@@ -80,9 +82,9 @@ public class ControlPanelTests     {
         ControlPanelSteps.clickDeleteNewsButton(titleNameForEdit);
     }
 
-    @Story("ТК№29. Смена статуса новости, находящаяся в статусе \"Активна\" на статус \"Не активна\", во вкладке \"Панель управления\"")//прошел но необходимо добавить матчер на сравнение
+    @Story("ТК№29. Смена статуса новости, находящаяся в статусе \"Активна\" на статус \"Не активна\", во вкладке \"Панель управления\"")
     @Test
-    public void changeStatusOfNews(){
+    public void changeStatusOfNews() {
         MainSteps.goToTheNews();
         NewsSteps.clickButtonEditNews();
         ControlPanelSteps.clickCreateNewsButton();
@@ -95,7 +97,7 @@ public class ControlPanelTests     {
 
     @Story("ТК№33. Поле \"Категория\" пустое, при создании новости, во вкладке \"Панель управления\"")
     @Test
-    public void createNewsFieldCategoryEmpty(){
+    public void createNewsFieldCategoryEmpty() {
         MainSteps.goToTheNews();
         NewsSteps.clickButtonEditNews();
         ControlPanelSteps.clickCreateNewsButton();

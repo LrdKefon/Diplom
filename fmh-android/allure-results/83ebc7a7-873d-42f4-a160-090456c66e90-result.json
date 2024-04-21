@@ -1,0 +1,61 @@
+{
+    "name": "createNewsFieldCategoryEmpty",
+    "start": 1713679840806,
+    "stop": 1713679853536,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "83ebc7a7-873d-42f4-a160-090456c66e90",
+    "historyId": "b116011a4f2ca8f555a07f1ac40ce708",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.ControlPanelTests.createNewsFieldCategoryEmpty",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.ControlPanelTests"
+        },
+        {
+            "name": "testMethod",
+            "value": "createNewsFieldCategoryEmpty"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.ControlPanelTests"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(982)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "ТК№33. Поле \"Категория\" пустое, при создании новости, во вкладке \"Панель управления\""
+        },
+        {
+            "name": "feature",
+            "value": "Тест-кейсы для Панели Управления Новостей мобильного приложения Мобильный хоспис."
+        }
+    ]
+}

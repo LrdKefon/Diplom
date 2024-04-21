@@ -1,0 +1,61 @@
+{
+    "name": "goToTheNewsPage",
+    "start": 1713629096367,
+    "stop": 1713629115336,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "d0aae27a-a1b1-4616-8286-57e263535b90",
+    "historyId": "e9f5c2754a9a0f1a6945175d60b0c234",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.MainPageTests.goToTheNewsPage",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.MainPageTests"
+        },
+        {
+            "name": "testMethod",
+            "value": "goToTheNewsPage"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.MainPageTests"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(912)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "ТК№6. Переход во вкладку \"News\" через главное меню мобильного приложения"
+        },
+        {
+            "name": "feature",
+            "value": "Тест-кейсы для вкладки Main мобильного приложения Мобильный хоспис."
+        }
+    ]
+}
