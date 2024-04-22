@@ -37,7 +37,6 @@ public class ControlPanelSteps {
                         hasDescendant(withText(title)),
                         clickChildViewWithId(R.id.delete_news_item_image_view)));
         onView(ControlPanelPage.ButtonAgreement()).perform(click());
-        //onView(allOf(withText(title), isDisplayed())).check(doesNotExist());????
 
     }
 
