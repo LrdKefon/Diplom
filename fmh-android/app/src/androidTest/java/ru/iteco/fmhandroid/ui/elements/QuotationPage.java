@@ -9,5 +9,5 @@ import androidx.test.espresso.ViewInteraction;
 import ru.iteco.fmhandroid.R;
 
 public class QuotationPage {
-    public static ViewInteraction pageOfQuotation = onView(withId(R.id.our_mission_title_text_view));
+    public ViewInteraction pageOfQuotation = onView(withId(R.id.our_mission_title_text_view));
 }

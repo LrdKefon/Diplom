@@ -1,6 +1,9 @@
 package ru.iteco.fmhandroid.ui.tests;
 
 
+import static ru.iteco.fmhandroid.ui.data.Data.validLogin;
+import static ru.iteco.fmhandroid.ui.data.Data.validPassword;
+
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 
 import org.junit.Before;
@@ -18,39 +21,43 @@ import ru.iteco.fmhandroid.ui.steps.MainSteps;
 @RunWith(AllureAndroidJUnit4.class)
 @Feature(value = "Тест-кейсы для вкладки Main мобильного приложения Мобильный хоспис.")
 public class MainPageTests {
+    AuthorizationSteps authStep = new AuthorizationSteps();
+    MainSteps mainSteps = new MainSteps();
     @Rule
     public ActivityScenarioRule<AppActivity> mActivityScenarioRule =
             new ActivityScenarioRule<>(AppActivity.class);
 
     @Before
     public void setUp() {
-        AuthorizationSteps.appDownload();
+        authStep.appDownload();
         try {
-            AuthorizationSteps.loadAuthPage();
+            authStep.loadAuthPage();
         } catch (Exception e) {
-            AuthorizationSteps.logOut();
-            AuthorizationSteps.loadAuthPage();
+            authStep.logOut();
+            authStep.loadAuthPage();
         }
-        AuthorizationSteps.login("login2", "password2");
+        authStep.login(validLogin, validPassword);
 
     }
 
     @Story("ТК№6. Переход во вкладку \"News\" через главное меню мобильного приложения")
     @Test
     public void goToTheNewsPage() {
-        MainSteps.goToTheNews();
+
+        mainSteps.goToTheNews();
     }
 
     @Story("ТК№7. Переход во вкладку \"About\" через главное меню мобильного приложения")
     @Test
     public void goToTheAboutPage() {
-        MainSteps.goToTheAbout();
+
+        mainSteps.goToTheAbout();
     }
 
     @Story("ТК№8. Переход во вкладку «Тематические цитаты» через главное меню мобильного приложения")
     @Test
     public void goToTheQuotationPage() {
-        MainSteps.goToTheQuotation();
+        mainSteps.goToTheQuotation();
 
     }
 

@@ -14,9 +14,9 @@ import org.hamcrest.Matcher;
 import java.util.concurrent.TimeoutException;
 
 public class TimeoutEspresso {
-    private static final int SLEEP_IN_A_LOOP_TIME = 1000;
+    private  final int SLEEP_IN_A_LOOP_TIME = 1000;
 
-    public static class TimedViewInteraction {
+    public  class TimedViewInteraction {
 
         private final ViewInteraction wrappedViewInteraction;
 
@@ -33,7 +33,7 @@ public class TimeoutEspresso {
         }
     }
 
-    public static TimedViewInteraction onViewWithTimeout(long timeoutInMillis, @NonNull final Matcher<View> viewMatcher) {
+    public  TimedViewInteraction onViewWithTimeout(long timeoutInMillis, @NonNull final Matcher<View> viewMatcher) {
 
         final long startTime = System.currentTimeMillis();
         final long endTime = startTime + timeoutInMillis;

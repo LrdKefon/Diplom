@@ -9,18 +9,19 @@ import io.qameta.allure.kotlin.Step;
 import ru.iteco.fmhandroid.ui.elements.AboutPage;
 
 public class AboutPageSteps {
+    AboutPage aboutPage = new AboutPage();
     @Step("Переход по ссылке Политика конфиденциальности")
-    public static void goToTheLinkPrivacyPolicy() {
-        AboutPage.linkPrivacyPolicyLink.check(matches(isDisplayed()));
-        AboutPage.linkPrivacyPolicyLink.perform(click());
-        AboutPage.policyInformation.check(matches(isDisplayed()));
+    public void goToTheLinkPrivacyPolicy() {
+        aboutPage.linkPrivacyPolicyLink.check(matches(isDisplayed()));
+        aboutPage.linkPrivacyPolicyLink.perform(click());
+        aboutPage.policyInformation.check(matches(isDisplayed()));
     }
 
     @Step("Переход по ссылке Пользовательское соглашение")
-    public static void goToTheLinkTermsOfUse() {
-        AboutPage.linkTermsOfUseLink.check(matches(isDisplayed()));
-        AboutPage.linkTermsOfUseLink.perform(click());
-        AboutPage.termsInformation.check(matches(isDisplayed()));
+    public void goToTheLinkTermsOfUse() {
+        aboutPage.linkTermsOfUseLink.check(matches(isDisplayed()));
+        aboutPage.linkTermsOfUseLink.perform(click());
+        aboutPage.termsInformation.check(matches(isDisplayed()));
     }
 
 

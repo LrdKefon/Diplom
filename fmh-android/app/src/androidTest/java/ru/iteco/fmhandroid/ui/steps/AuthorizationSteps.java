@@ -10,9 +10,7 @@ import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.isRoot;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
-import static ru.iteco.fmhandroid.ui.elements.MainPaige.logoEnter;
-import static ru.iteco.fmhandroid.ui.steps.CustomViewActions.elementWaiting;
-import static ru.iteco.fmhandroid.ui.steps.CustomViewActions.waitForElement;
+
 
 import android.view.View;
 
@@ -24,28 +22,31 @@ import ru.iteco.fmhandroid.ui.elements.LoginPage;
 import ru.iteco.fmhandroid.ui.elements.MainPaige;
 
 public class AuthorizationSteps {
+    LoginPage loginPage = new LoginPage();
+    CustomViewActions customViewActions = new CustomViewActions();
+    MainPaige mainPaige = new MainPaige();
 
 
     @Step("Авторизация, на вход принимает логин и пароль")
-    public static void login(String login, String password) {
-        LoginPage.loginField.check(matches(isDisplayed()));
-        LoginPage.loginField.perform(click());
-        LoginPage.loginField.perform(replaceText(login));
-        LoginPage.passwordField.check(matches(isDisplayed()));
-        LoginPage.passwordField.perform(click());
-        LoginPage.passwordField.perform(replaceText(password), closeSoftKeyboard());
-        LoginPage.buttonSign.perform(click());
+    public void login(String login, String password) {
+        loginPage.loginField.check(matches(isDisplayed()));
+        loginPage.loginField.perform(click());
+        loginPage.loginField.perform(replaceText(login));
+        loginPage.passwordField.check(matches(isDisplayed()));
+        loginPage.passwordField.perform(click());
+        loginPage.passwordField.perform(replaceText(password), closeSoftKeyboard());
+        loginPage.buttonSign.perform(click());
 
     }
 
     @Step("Проверка успешной авторизации")
-    public static void checkLogoMainPage() {
-        elementWaiting(withId(R.id.trademark_image_view), 5000);
-        logoEnter.check(matches(isDisplayed()));
+    public void checkLogoMainPage() {
+        customViewActions.elementWaiting(withId(R.id.trademark_image_view), 5000);
+        mainPaige.logoEnter.check(matches(isDisplayed()));
     }
 
     @Step("Информационное сообщение при входе не зарегистрированного пользователя")
-    public static void checkInformationMessageNotRegisteredUser(String text, View decorView) {
+    public void checkInformationMessageNotRegisteredUser(String text, View decorView) {
         onView(withText(text))
                 .inRoot(withDecorView(Matchers.not(decorView)))
                 .check(matches(isDisplayed()));
@@ -53,24 +54,26 @@ public class AuthorizationSteps {
 
 
     @Step("Выход из УЗ")
-    public static void logOut() {
-        MainPaige.iconLogOut.check(matches(isDisplayed()));
-        MainPaige.iconLogOut.perform(click());
-        onView(isRoot()).perform(waitForElement(withText("Log out"), 5000));
-        MainPaige.iconActionLogOut.check(matches(isDisplayed()));
-        MainPaige.iconActionLogOut.perform(click());
-        LoginPage.pageAuthorization.check(matches(isDisplayed()));
+    public void logOut() {
+        mainPaige.iconLogOut.check(matches(isDisplayed()));
+        mainPaige.iconLogOut.perform(click());
+        onView(isRoot()).perform(customViewActions.waitForElement(withText("Log out"), 5000));
+        mainPaige.iconActionLogOut.check(matches(isDisplayed()));
+        mainPaige.iconActionLogOut.perform(click());
+        loginPage.pageAuthorization.check(matches(isDisplayed()));
 
     }
 
     @Step("Загрузка приложение")
-    public static void appDownload() {
-        elementWaiting(withId(R.id.splashscreen_image_view), 5000);
+    public void appDownload() {
+
+        customViewActions.elementWaiting(withId(R.id.splashscreen_image_view), 5000);
     }
 
     @Step("Загрузка страницы авторизации")
-    public static void loadAuthPage() {
-        elementWaiting(withId(R.id.enter_button), 5000);
+    public void loadAuthPage() {
+
+        customViewActions.elementWaiting(withId(R.id.enter_button), 5000);
     }
 
 }

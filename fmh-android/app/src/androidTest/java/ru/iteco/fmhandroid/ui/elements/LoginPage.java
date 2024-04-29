@@ -17,14 +17,14 @@ import org.hamcrest.core.IsInstanceOf;
 import ru.iteco.fmhandroid.R;
 
 public class LoginPage {
-    public static ViewInteraction loginField = onView(allOf(withHint("Login"),
+    public ViewInteraction loginField = onView(allOf(withHint("Login"),
             withParent(withParent(withId(R.id.login_text_input_layout)))));
-    public static ViewInteraction passwordField = onView(allOf(withHint("Password"),
+    public ViewInteraction passwordField = onView(allOf(withHint("Password"),
             withParent(withParent(withId(R.id.password_text_input_layout)))));
-    public static ViewInteraction buttonSign = onView(allOf(withId(R.id.enter_button),
+    public ViewInteraction buttonSign = onView(allOf(withId(R.id.enter_button),
             withText("SIGN IN"), withContentDescription("Save"),
             withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.RelativeLayout.class)))));
-    public static ViewInteraction pageAuthorization = onView(allOf(withText("Authorization")));
+    public ViewInteraction pageAuthorization = onView(allOf(withText("Authorization")));
 
 
 }

@@ -23,7 +23,7 @@ import org.hamcrest.TypeSafeMatcher;
 import java.util.concurrent.TimeoutException;
 
 public class CustomViewActions {
-    public static ViewAction waitForElement(final Matcher matcher, final long millis) {
+    public ViewAction waitForElement(final Matcher matcher, final long millis) {
         return new ViewAction() {
             @Override
             public Matcher<View> getConstraints() {
@@ -67,11 +67,11 @@ public class CustomViewActions {
 
     }
 
-    public static void elementWaiting(Matcher matcher, int millis) {
+    public void elementWaiting(Matcher matcher, int millis) {
         onView(isRoot()).perform(waitForElement(matcher, millis));
     }
 
-    public static ViewAction waitFor(final long millis) {
+    public ViewAction waitFor(final long millis) {
         return new ViewAction() {
             @Override
             public Matcher<View> getConstraints() {
@@ -90,7 +90,7 @@ public class CustomViewActions {
         };
     }
 
-    public static class ToastMatcher extends TypeSafeMatcher<Root> {
+    public class ToastMatcher extends TypeSafeMatcher<Root> {
 
         @Override
         public void describeTo(Description description) {
@@ -111,7 +111,7 @@ public class CustomViewActions {
         }
     }
 
-    public static ViewAction clickChildViewWithId(final int id) {//добавил для метода удаления новости
+    public ViewAction clickChildViewWithId(final int id) {//добавил для метода удаления новости
         return new ViewAction() {
             @Override
             public Matcher<View> getConstraints() {

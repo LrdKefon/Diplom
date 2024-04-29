@@ -1,6 +1,10 @@
 package ru.iteco.fmhandroid.ui.tests;
 
 
+import static ru.iteco.fmhandroid.ui.data.Data.notRegisteredLogin;
+import static ru.iteco.fmhandroid.ui.data.Data.validLogin;
+import static ru.iteco.fmhandroid.ui.data.Data.validPassword;
+
 import android.view.View;
 
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
@@ -19,25 +23,23 @@ import ru.iteco.fmhandroid.ui.steps.AuthorizationSteps;
 @RunWith(AllureAndroidJUnit4.class)
 @Feature(value = "ТК по процессу Авторизация, аутентификация.")
 public class AuthorizationTests {
+    AuthorizationSteps authStep = new AuthorizationSteps();
     @Rule
     public ActivityScenarioRule<AppActivity> mActivityScenarioRule =
             new ActivityScenarioRule<>(AppActivity.class);
 
-    String validLogin = "login2";
-    String notRegisteredLogin = "Valeron777";
-    String validPassword = "password2";
     private View decorView;
 
 
     @Before
     public void setUp() {
-        AuthorizationSteps.appDownload();
+        authStep.appDownload();
         try {
-            AuthorizationSteps.loadAuthPage();
+            authStep.loadAuthPage();
 
         } catch (Exception e) {
-            AuthorizationSteps.logOut();
-            AuthorizationSteps.loadAuthPage();
+            authStep.logOut();
+            authStep.loadAuthPage();
         }
         mActivityScenarioRule.getScenario()
                 .onActivity(activity -> decorView = activity.getWindow().getDecorView());
@@ -46,26 +48,26 @@ public class AuthorizationTests {
     @Story("ТК№1. Авторизация в мобильном приложении(зарегистрированный пользователь")
     @Test
     public void authorizationRegisteredUser() {
-        AuthorizationSteps.login(validLogin, validPassword);
-        AuthorizationSteps.checkLogoMainPage();
-        AuthorizationSteps.logOut();
+        authStep.login(validLogin, validPassword);
+        authStep.checkLogoMainPage();
+        authStep.logOut();
 
     }
 
     @Story("Выход из учётной записи")
     @Test
     public void logOut() {
-        AuthorizationSteps.login(validLogin, validPassword);
-        AuthorizationSteps.checkLogoMainPage();
-        AuthorizationSteps.logOut();
+        authStep.login(validLogin, validPassword);
+        authStep.checkLogoMainPage();
+        authStep.logOut();
 
     }
 
     @Story("Авторизация в мобильном приложении незарегистрированного пользователя")
     @Test
     public void authorizationNotRegisteredUser() {
-        AuthorizationSteps.login(notRegisteredLogin, validPassword);
-        AuthorizationSteps.checkInformationMessageNotRegisteredUser("Something went wrong. Try again later.", decorView);
+        authStep.login(notRegisteredLogin, validPassword);
+        authStep.checkInformationMessageNotRegisteredUser("Something went wrong. Try again later.", decorView);
 
     }
 

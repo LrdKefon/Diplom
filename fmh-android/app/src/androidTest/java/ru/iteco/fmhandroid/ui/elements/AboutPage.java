@@ -10,11 +10,11 @@ import androidx.test.espresso.ViewInteraction;
 import ru.iteco.fmhandroid.R;
 
 public class AboutPage {
-    public static ViewInteraction versionAboutPage = onView(withId(R.id.about_version_title_text_view));//к нему заякорил страницу
-    public static ViewInteraction linkPrivacyPolicyLink = onView(withId(R.id.about_privacy_policy_value_text_view));
-    public static ViewInteraction linkTermsOfUseLink = onView(withId(R.id.about_terms_of_use_value_text_view));
-    public static ViewInteraction policyInformation = onView(withText("Политика конфидециальности"));
+    public ViewInteraction versionAboutPage = onView(withId(R.id.about_version_title_text_view));
+    public ViewInteraction linkPrivacyPolicyLink = onView(withId(R.id.about_privacy_policy_value_text_view));
+    public ViewInteraction linkTermsOfUseLink = onView(withId(R.id.about_terms_of_use_value_text_view));
+    public ViewInteraction policyInformation = onView(withText("Политика конфидециальности"));
     ;
-    public static ViewInteraction termsInformation = onView(withText("Пользовательское соглашение"));
+    public ViewInteraction termsInformation = onView(withText("Пользовательское соглашение"));
 
 }

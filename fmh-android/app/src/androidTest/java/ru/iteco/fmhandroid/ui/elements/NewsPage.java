@@ -14,9 +14,9 @@ import ru.iteco.fmhandroid.R;
 
 public class NewsPage {
 
-    public  static ViewInteraction pageOfNews = onView(withId(R.id.all_news_cards_block_constraint_layout));
+    public ViewInteraction pageOfNews = onView(withId(R.id.all_news_cards_block_constraint_layout));
 
-    public static Matcher<View> buttonEditNews() {
+    public Matcher<View> buttonEditNews() {
         return allOf(withId(R.id.edit_news_material_button));
     }
 }
